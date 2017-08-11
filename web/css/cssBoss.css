@@ -97,7 +97,7 @@ button[type=button]:hover{
     background-color: #70ab8f;
 }
 .chapter-c{
-    width: 100%; height: auto; padding: 10px;
+    width: 90%; height: auto; padding: 20px; margin-left: 5%;
 }
 #content_bottom{
     width: 100%;; height: auto; padding: 10px; text-align: center;

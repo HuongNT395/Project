@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#container{
+    width: 90%; height: auto;  margin-left: 5%; background-color: #e4dbbf;
+}
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    /*background-image: url('../images/icons/search.png');*/
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 2px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 25px 10px 25px 0px;
+    float: right;
+}
+input[type=text]:focus {
+    width: 100%;
+}
+#text{
+    width: 100%; height: auto; font-size: 14px; padding: 3px; margin: 1%;
+    overflow: inherit;
+}
+/*nav*/
+nav{
+    width: 100%; height: auto; float: left;
+}
+nav ul{
+    width: 100%; background-color: #424242; list-style-type: none;
+}
+nav li{
+    display: inline-block; position: relative; width: 120px;
+}
+nav li a{
+    display: inline-block; text-align: center; display: block; text-decoration: none;
+    padding: 12px 5px; font-size: 16px; color: white;
+}
+nav li a:hover{
+    background-color: #008f68;
+}
+.sub li{ display: block;}
+.sub{
+    display: none; position: absolute;
+}
+#pull{display: none;}
+nav li.hide:hover .sub{
+    display: inline-block;
+}
+a#pull{
+    padding: 12px 5px; font-size: 20px; text-decoration: none; color: white;
+}
+ul { z-index: 1}
+
+div#left_top{
+    margin: 5px; width: 100%;  margin-top: 20px; height: auto;
+}
+#left_top a{
+    color: #dc5b21; font-size: 16px; padding: 10px;
+}
+#content{
+    width: 100%; height: auto;
+}
+#content_top{
+    width: 100%;
+    text-align: center;
+}
+#content_top p {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    font-size: 15px;
+}
+#content_top p a{
+    font-size: 16px; padding: 5px;
+}
+button[type=button]{
+    font-size: 14px; padding: 3px;
+}
+button[type=button] a{
+    color: white;
+}
+button[type=button]:hover{
+    background-color: #70ab8f;
+}
+.chapter-c{
+    width: 100%; height: auto; padding: 10px;
+}
+#content_bottom{
+    width: 100%;; height: auto; padding: 10px; text-align: center;
+}
+footer{
+    width: 100%; clear: both; height: 50px; background-color: #383127;
+    font-size: 14px; text-align: center; font-weight: 600; color: white; position: relative;
+}
+footer p{
+    margin-top: 20px; position: absolute; text-align: center; width: 100%;
+}
+/*------------------------*/
+@media only screen and (max-width: 768px) {
+    /*header*/
+    header {
+        width: 100%;
+        height: 80px;
+        position: relative;
+    }
+    #logo {
+        width: 100%;
+        position: relative;
+    }
+    #logo img {
+        height: 100%;
+        width: 80px;
+        float: left;
+    }
+    #logo p {
+        font-size: 26px;
+        color: orangered;
+        margin: 25px 0px 25px 85px;
+        font-weight: 600;
+        position: absolute;
+        float: left;
+    }
+    header form {
+        width: 100%;
+        height: 80px;
+    }
+    nav {
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    a#pull {
+        padding: 12px 5px;
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #383127;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content: "";
+        /*background: url('../images/icons/nav-animation.gif') no-repeat;*/
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 10px;
+    }
+
+    nav li {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        font-size: 14px;
+    }
+    nav li a {
+        display: inline-block;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        padding: 12px 5px;
+        font-size: 12px;
+        color: white;
+    }
+    a#pull {
+        padding: 12px 5px;
+        text-decoration: none;
+        color: white;
+    }
+    form{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /*header*/
+    header {
+        width: 100%;
+        height: 80px;
+        position: relative;
+    }
+
+    #logo {
+        width: 50%;
+        position: relative;
+    }
+
+    #logo img {
+        height: 100%;
+        width: 80px;
+        float: left;
+    }
+
+    #logo p {
+        font-size: 26px;
+        color: orangered;
+        margin: 25px 0px 25px 85px;
+        font-weight: 600;
+        position: absolute;
+        float: left;
+    }
+
+    header form {
+        width: 50%;
+        height: 80px;
+        float: right;
+    }
+}
